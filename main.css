@@ -116,7 +116,6 @@
 
  /* Hero image container */
  .hero-image {
-     max-width: 400px;
      flex: 1;
      display: flex;
      justify-content: center;
@@ -125,8 +124,8 @@
 
  /* Hero image styling */
  .hero-image img {
-     max-width: 100%;
-     height: auto;
+     width: 800px;
+     height: 200;
      border-radius: 5px;
  }
 
