@@ -73,9 +73,17 @@
      background-color: #007bff;
      color: white;
      border: none;
-     border-radius: 5px;
-     cursor: pointer;
+     font-weight: 600;
+     border-radius: 12px;
      font-size: 14px;
+ }
+
+ .btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
  }
 
  /* ===========================
@@ -126,7 +134,14 @@
  .hero-image img {
      width: 800px;
      height: 200;
-     border-radius: 5px;
+     border-radius: 12px;
+     box-shadow: 0 2px 8px #979797;
+ }
+
+ .hero-image img:hover{
+    transform: rotate(-6deg);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
  }
 
  /* ===========================
@@ -248,7 +263,8 @@
      color: #fff;
      padding: 12px 24px;
      border: none;
-     border-radius: 5px;
+     border-radius: 12px;
+     font-weight: 600;
      text-decoration: none;
  }
 
@@ -263,6 +279,11 @@
      width: 100%;
      border-radius: 10px;
  }
+
+  .image img:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+  }
 
  /* Stats container for displaying metrics */
  .stats {
@@ -349,7 +370,7 @@
      justify-content: center;
      gap: 30px;
  }
- 
+
  /* Individual team member card */
  .team-member {
      background: white;
@@ -358,8 +379,7 @@
      width: 250px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  }
-
-.team-member:hover{
+ .team-member:hover{
     cursor: pointer;
     transform: translateY(-8px);
     transition: 0.3s;
@@ -402,6 +422,11 @@
      display: inline-block;
      transition: 0.3s;
  }
+
+  .social-icons a:hover{
+    transform: translateY(-8px);
+    transition: ease-in-out 0.3s;
+  }
 
  /* Instagram icon color */
  .social-icons a:nth-child(2) {
@@ -524,6 +549,9 @@
  /* Prompt button hover effect */
  .prompt-button button:hover {
      background-color: black;
+     color: white;
+     transform: scale(1.01);
+     transition: ease-in-out 0.3s;
  }
 
  /* ===========================
@@ -563,6 +591,11 @@
      margin-bottom: 10px;
  }
 
+ .footer-column ul li:hover{
+    color: #1da1f2;
+    cursor: pointer;
+ }
+
  /* Footer social icons */
  .social-icons a {
      margin-right: 10px;
@@ -591,11 +624,19 @@
  .newsletter button {
      background-color: #009aff;
      color: white;
+     font-weight: 600;
      padding: 10px 20px;
      border: none;
      border-radius: 5px;
      cursor: pointer;
  }
+
+  .newsletter button:hover{
+    transform: scale(1.01);
+    transition: ease-in-out 0.3s;
+    background-color: black;
+    color: white;
+  }
 
  /* Mobile responsive adjustments */
  @media (max-width: 768px) {
