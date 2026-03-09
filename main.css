@@ -349,7 +349,7 @@
      justify-content: center;
      gap: 30px;
  }
-
+ 
  /* Individual team member card */
  .team-member {
      background: white;
@@ -358,6 +358,13 @@
      width: 250px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
  }
+
+.team-member:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: 0.3s;
+    box-shadow: 0 4px 10px #555;
+}
 
  /* Team member image */
  .team-member img {
